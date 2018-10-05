@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    //배열 변수를 AppDelegate에 저장하는 이유
+    //접근성, 데이터 보존, 일관성
+    var memoList = [MemoData]()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
